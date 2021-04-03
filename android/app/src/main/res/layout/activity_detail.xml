@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.details.DetailActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline_start"
+            app:layout_constraintGuide_begin="@dimen/start_guideline_begin"
+            android:orientation="vertical"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline_end"
+            app:layout_constraintGuide_end="@dimen/end_guideline_end"
+            android:orientation="vertical"/>
+
+        <ImageView
+            android:id="@+id/img_back_button"
+            android:layout_width="@dimen/back_btn_width"
+            android:layout_height="@dimen/back_btn_height"
+            android:layout_marginTop="@dimen/back_btn_margin_top"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:layout_constraintStart_toEndOf="@+id/guideline_start"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="@dimen/img_poster_width"
+            android:layout_height="@dimen/img_poster_height"
+            android:layout_marginTop="@dimen/img_poster_margin_top"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"/>
+
+        <TextView
+            android:id="@+id/tv_movie_title"
+            android:layout_marginTop="@dimen/movietitel_margin_top"
+            android:textSize="@dimen/movie_title_text_size"
+            android:fontFamily="@font/free_sans_bold"
+            android:textColor="@color/light_gray"
+            tools:text="Avengers: Endgame"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/img_poster"
+            app:layout_constraintEnd_toEndOf="@id/tv_overview_detail"
+            app:layout_constraintStart_toStartOf="@+id/tv_overview_label"/>
+
+        <TextView
+            android:id="@+id/tv_movie_date"
+            android:textSize="@dimen/movie_date_text_size"
+            android:fontFamily="@font/free_sans"
+            android:textColor="@color/light_gray"
+            tools:text="Avengers: Endgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_movie_title"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toEndOf="@+id/guideline_start"/>
+
+        <TextView
+            android:id="@+id/tv_overview_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/overview_label_margin_top"
+            android:layout_marginStart="@dimen/overview_label_margin_start"
+            app:layout_constraintTop_toBottomOf="@+id/tv_movie_date"
+            app:layout_constraintStart_toEndOf="@+id/guideline_start"
+            android:text="@string/overview_lbl"
+            android:textSize="@dimen/overview_text_size"
+            android:fontFamily="@font/free_sans_bold"
+            android:textColor="@color/light_gray"/>
+
+        <TextView
+            android:id="@+id/tv_overview_detail"
+            android:textSize="@dimen/overview_detail_text_size"
+            android:fontFamily="@font/free_sans"
+            android:textColor="@color/light_gray"
+            android:layout_marginStart="@dimen/overview_detail_margin_start"
+            android:layout_marginEnd="@dimen/overview_detail_margin_end"
+            android:layout_marginTop="@dimen/overview_detail_margin_top"
+            tools:text="Overview  After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store."
+            app:layout_constrainedWidth="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintTop_toBottomOf="@id/tv_overview_label"
+            app:layout_constraintStart_toEndOf="@+id/guideline_start"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flexBoxLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexWrap="wrap"
+            android:layout_marginTop="@dimen/tags_layout_margin_top"
+            app:layout_constraintEnd_toEndOf="@id/tv_overview_detail"
+            app:layout_constraintTop_toBottomOf="@id/tv_overview_detail"
+            app:layout_constraintStart_toStartOf="@+id/tv_overview_detail"/>
+
+        <ProgressBar
+            android:id="@+id/progress_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

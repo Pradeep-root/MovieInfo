@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/tag_marin"
+    android:elevation="@dimen/tag_elevation"
+    android:background="@drawable/background_for_tage">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tag_height"
+        android:id="@+id/tag_name"
+        android:paddingLeft="@dimen/tag_text_left_pading"
+        android:paddingRight="@dimen/tag_text_righ_pading"
+        android:gravity="center"
+        android:textSize="@dimen/item_date_text_size"
+        android:lines="1"
+        android:fontFamily="@font/free_sans"
+        android:textAllCaps="true"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
