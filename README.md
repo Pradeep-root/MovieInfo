@@ -37,9 +37,5 @@ Followed the desing guidlines given as below.
 - No Internet connectivity error handling (All type of network connectivity check).
 - Proper indication for image loading and error. 
 
-## Note
-
-- Toolbar asset (MOVIBOX) were not correct in the document. Talked with recruiter team about this, got suggested to used text view with same color. 
-- Duration of movie is not coming in the APIs response, so not showing.
 
 
