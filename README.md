@@ -35,7 +35,8 @@ Followed the desing guidlines given as below.
 - Shown loading data event handling during web call.
 - Web Error handling 
 - No Internet connectivity error handling (All type of network connectivity check).
-- Proper indication for image loading and error. 
+- Proper indication for image loading and error.
 
-
+<img src="https://user-images.githubusercontent.com/26626575/113974875-49f2e380-985c-11eb-9b72-28ea53d14c6f.png" width="440" height="860">
+<img src="https://user-images.githubusercontent.com/26626575/113974882-4cedd400-985c-11eb-9bf7-c6923cee4fa3.png" width="440" height="860">
 
