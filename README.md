@@ -6,7 +6,7 @@ This is an Android assignment project developed in Kotlin with MVVM architecture
 
 ### UI/UX
 Followed the desing guidlines given as below.
-* [Android](https://app.abstract.com/share/0c431216-05c1-45d7-8304-f9e6566276bf)
+* [Android]
 * Constraint layout
 * Custom view created for RatingView by using extending the Andorid View class where startAngle = -90f, maxAngle = 360f, maxProgress = 100 and drown circle using canvas, also included the logic of color inside this view in less then 50% it becomes Yellow and in 50% and more it becomes Green. In this class also placed the logic of percentage rating inside the circle by finding the center of the circle view.
 * Recyclerview for horizontal and vertical movie list.
