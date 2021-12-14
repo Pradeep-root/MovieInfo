@@ -1,4 +1,4 @@
-# Mobile Assignment CS
+# Andorid CS
 Updated README file by Pradeep kumar Deshmukh, included information about assignment implementation.
 
 ## About
