@@ -1,5 +1,5 @@
 # Andorid CS
-Updated README file by Pradeep kumar Deshmukh, included information about assignment implementation.
+Updated README file by Pradeep kumar Deshmukh, included information about implementation.
 
 ## About
 This is an Android assignment project developed in Kotlin with MVVM architecture and for testing Mockk and Junit libraries are used. 
